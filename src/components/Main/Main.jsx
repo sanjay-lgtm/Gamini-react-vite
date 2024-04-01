@@ -54,9 +54,9 @@ const Main = () => {
                             <img src={ gaminiIcon } alt='' />
                             { loading
                                 ? <div className='loader'>
-                                    <hr/>
-                                    <hr/>
-                                    <hr/>
+                                    <hr />
+                                    <hr />
+                                    <hr />
                                 </div>
                                 :
                                 <p dangerouslySetInnerHTML={ { __html: resultData } }></p>
@@ -74,11 +74,11 @@ const Main = () => {
                         <div>
                             <img src={ galleryIcon } alt='' />
                             <img src={ micIcon } alt='' />
-                            {input?<img onClick={ () => onSent() } src={ sendIcon } alt='' />:null}
+                            { input ? <img onClick={ () => onSent() } src={ sendIcon } alt='' /> : null }
                         </div>
                     </div>
                     <p className='bottom-info'>
-                        Gamini may display inaccurate info, including about people, so double click its responses . Your Privacy with Gamini App.
+                        Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps
                     </p>
                 </div>
             </div>
